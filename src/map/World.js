@@ -2,11 +2,9 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { PerspectiveCamera, Stars} from "@react-three/drei";
 import { Physics, usePlane, useBox } from "@react-three/cannon";
 import "../styles/style.css";
-import {useRef} from "react";
-
+import Player from "../player/Player";
 
 function Box() {
-
     const [ref, api] = useBox(() => ({ mass: 1, position: [0, 2, 0] }));
     return (
         <mesh
@@ -34,37 +32,7 @@ function Plane() {
     );
 }
 
-function Player(){
-    const ref = useRef(null);
-
-    useFrame((state, delta)=>{
-        ref.current.position.x +=0.01;
-    });
-
-    return (
-        <>
-            <group ref={ref}>
-                <PerspectiveCamera
-                    makeDefault
-                    position={[0, 10, 10]}
-                    args={[45, 1.2, 1, 1000]}
-                    rotation={[-Math.PI/6,0,0]}
-                />
-                <mesh castShadow receiveShadow position={[0, 2, 0]}>
-                    <boxBufferGeometry args={[2, 2, 2]} />
-                    <meshStandardMaterial color={"#ff0000"} />
-                </mesh>
-            </group>
-        </>
-    );
-}
-
 export default function World(){
-
-
-
-
-
     return (
         <Canvas>
             <Stars/>
