@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/nuit-info-dung/static/css/main.ea2774a5.css",
-    "main.js": "/nuit-info-dung/static/js/main.fc28a9bf.js",
+    "main.js": "/nuit-info-dung/static/js/main.b7864ffa.js",
     "static/js/787.689263d6.chunk.js": "/nuit-info-dung/static/js/787.689263d6.chunk.js",
     "index.html": "/nuit-info-dung/index.html",
     "main.ea2774a5.css.map": "/nuit-info-dung/static/css/main.ea2774a5.css.map",
-    "main.fc28a9bf.js.map": "/nuit-info-dung/static/js/main.fc28a9bf.js.map",
+    "main.b7864ffa.js.map": "/nuit-info-dung/static/js/main.b7864ffa.js.map",
     "787.689263d6.chunk.js.map": "/nuit-info-dung/static/js/787.689263d6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ea2774a5.css",
-    "static/js/main.fc28a9bf.js"
+    "static/js/main.b7864ffa.js"
   ]
 }
