@@ -4,6 +4,8 @@
   "homepage": "https://ThibaultNG.github.io/nuit-info-dung",
   "private": true,
   "dependencies": {
+    "@react-three/cannon": "^6.5.0",
+    "@react-three/drei": "^9.46.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
