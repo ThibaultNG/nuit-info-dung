@@ -3,6 +3,8 @@ import { PerspectiveCamera, Stars} from "@react-three/drei";
 import { Physics, usePlane, useBox } from "@react-three/cannon";
 import "../styles/style.css";
 import Player from "../player/Player";
+import Wall from "../objects/Wall";
+import Comp from "../objects/Comp";
 
 function Box() {
     const [ref, api] = useBox(() => ({ mass: 1, position: [0, 2, 0] }));
@@ -32,15 +34,18 @@ function Plane() {
     );
 }
 
+
 export default function World(){
+    const player = <Player/>
     return (
         <Canvas>
             <Stars/>
             <ambientLight intensity={0.5}/>
             <spotLight position={[10, 15, 10]} angle={0.3}/>
             <Physics>
-                <Player/>
+                {player}
                 <Plane/>
+                <Comp player={player}/>
             </Physics>
         </Canvas>
     );
